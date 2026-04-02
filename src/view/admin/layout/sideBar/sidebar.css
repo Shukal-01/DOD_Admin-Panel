@@ -1,0 +1,82 @@
+.sidebar {
+    width: 250px;
+}
+
+.sidebar {
+    position: static !important;
+    transition: 500ms ease-in-out;
+    border-right: 2px solid;
+}
+
+.mainSidebar span {
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 991px) {
+
+    .hide_sideBar {
+        width: 50px !important;
+    }
+
+    .sidebar_mousein {
+        width: 250px !important;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+    .sidebar {
+        position: absolute !important;
+        top: 0;
+    }
+
+    .show_sidebar {
+        left: 0px;
+    }
+
+    .hide_sideBar {
+        left: -250px;
+    }
+
+    .sidebar_main_body {
+        z-index: 11;
+    }
+
+    .sidebar_close_on_mobile {
+        left: 0;
+        height: 100vh;
+        position: fixed;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 10;
+        transition: 1s;
+    }
+
+    .sidebar_close_on_mobile_above_side {
+        z-index: 12;
+        background-color: inherit;
+    }
+}
+
+.selected_sidebar_dropdown {
+    background-color: rgb(110, 200, 199, 0.5);
+    color: white !important;
+}
+
+.sidebar_dropdown_hidden {
+    height: 0px;
+    overflow: hidden;
+}
+
+.sidebar_dropdown_shown {
+    background-color: rgb(110, 200, 199, 0.1);
+    /* border-radius: 0 18px 18px 0; */
+}
+
+.sidebar_dropdown_direction {
+    transition: 0.5s ease-in-out;
+}
+
+.rotate_50 {
+    transform: rotate(-180deg);
+}

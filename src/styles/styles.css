@@ -1,0 +1,41 @@
+* {
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* ---------------------------------------------------- */
+
+.bodyContent {
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 2px 2px 20px -15px black;
+}
+
+
+/* -------------- Table css --------------- */
+
+.bodyContentTable {
+    position: relative;
+}
+
+.bodyContentTable thead {
+    position: sticky;
+    top: 0;
+}
+
+.bodyContentTable thead th {
+    font-weight: 700;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.bodyContentTable tbody th {
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-weight: 700;
+}
+
+.bodyContentTable td {
+    font-weight: 600;
+}
+
+/* -------------- Table css --------------- */
